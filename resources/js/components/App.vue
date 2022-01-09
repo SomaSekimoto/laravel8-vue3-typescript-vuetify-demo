@@ -1,17 +1,17 @@
 <template>
-  <div>{{ message }}</div>
+    <div>
+        <h2>{{ message }}</h2>
+    </div>
 </template>
 
-
-<script>
-import { defineComponent } from "vue";
-
+<script lang="ts">
+import { defineComponent, ref } from "vue";
 export default defineComponent({
-  setup() {
-    const message = "Hello World";
-    return {
-      message
-    };
-  }
+    setup() {
+        const message = ref<string>("Hello World");
+        return {
+            message,
+        };
+    },
 });
 </script>
