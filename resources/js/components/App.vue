@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <h2>{{ message }}</h2>
-    </div>
+    <v-app>
+        <v-card>
+            <v-card-title>{{ message }}</v-card-title>
+        </v-card>
+    </v-app>
 </template>
 
 <script lang="ts">
